@@ -1,0 +1,8 @@
+Pada halaman utama, ada beberapa fitur:
+1. Search bar yang bisa menampilkan daftar film yang tersedia apa TMDB API
+2. Tiap film yang di-klik akan menampilkan popup baru
+
+Pada popup, ada beberapa fitur:
+1. Penjelasan mengenai film
+2. Tombol close button untuk menghilangkan popup
+3. Tombol watch trailer untuk melihat trailer film tersebut di Youtube
