@@ -1,4 +1,4 @@
-const main = document.getElementById("main");
+const movieListContainer = document.getElementById("movieListContainer");
 const bagianPopup = document.getElementById("bagianPopup");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
@@ -23,7 +23,7 @@ function getMovies(url) {
 }
 
 function showMovies(data) {
-  main.innerHTML = ``;
+  movieListContainer.innerHTML = ``;
 
   data.forEach((movie) => {
     const { id, poster_path, title, vote_average, overview, release_date } =
@@ -45,7 +45,7 @@ function showMovies(data) {
             </div>
             `;
 
-    main.appendChild(movieEl);
+    movieListContainer.appendChild(movieEl);
     const moviePopup = document.createElement("div");
     moviePopup.classList.add("popupnya");
     moviePopup.innerHTML = `
